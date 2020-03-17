@@ -3,7 +3,6 @@
 namespace pharsx\deathstrike;
 
 use pocketmine\Player;
-use pocketmine\Server;
 use pocketmine\entity\Entity;
 use pocketmine\math\Vector3;
 use pocketmine\network\mcpe\protocol\PlaySoundPacket;
@@ -41,7 +40,6 @@ class Strike{
 		$thunder->pitch=1;
 		
 		foreach($player->getLevel()->getPlayers() as $players){
-			//Server::getInstance()->broadcastPacket($player->getLevel()->getPlayers(), $light);
 			$players->dataPacket($bolt);
 			$players->dataPacket($impact);
 			$players->dataPacket($thunder);
