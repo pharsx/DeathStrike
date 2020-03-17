@@ -1,0 +1,6 @@
+name: DeathStrike
+main: pharsx\deathstrike\Main
+version: 0.0_1
+author: pharsx
+api: 3.0.0
+description: Send a lightning strike to a players location upon death
